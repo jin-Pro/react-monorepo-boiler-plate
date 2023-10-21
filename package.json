@@ -12,15 +12,11 @@
     "prettier": "pnpm -r prettier",
     "type": "pnpm -r type",
     "lint": "pnpm -r lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
   },
   "author": "jinPro",
   "license": "ISC",
-  "engines": {
-    "node": "18",
-    "npm": "npm install 대신 pnpm i를 사용해주세요.",
-    "yarn": "yarn 대신 pnpm i를 사용해주세요."
-  },
   "dependencies": {
     "@tanstack/react-query": "^5.0.0",
     "@tanstack/react-query-devtools": "^5.0.3",
