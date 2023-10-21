@@ -1,0 +1,26 @@
+{
+  "name": "@jinpro/admin",
+  "author": "jinPro",
+  "version": "1.0.0",
+  "main": "./src/index.tsx",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "pnpm vite --mode development",
+    "build": "tsc && vite build",
+    "build-dev": "tsc && vite build --mode development",
+    "type": "tsc --noEmit",
+    "prettier": "prettier --write --cache ./src",
+    "lint": "eslint --fix --cache --quiet ./src/**/*.{ts,tsx}",
+    "lint-print": "eslint --print-config ./.eslintrc",
+    "type-print": "tsc --noEmit --showConfig"
+  },
+  "dependencies": {
+    "axios": "^1.5.0"
+  },
+  "devDependencies": {
+    "@jinpro/tailwind-config": "workspace:*",
+    "@jinpro/eslint-config": "workspace:*",
+    "@jinpro/vite-config": "workspace:*"
+  }
+}

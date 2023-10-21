@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["./src", "../../type"],
+  "compilerOptions": {
+    "paths": {
+      "@page/*": ["./src/page/*"],
+      "@component/*": ["./src/component/*"],
+      "@hoc/*": ["./srchoc/*"],
+      "@hook/*": ["./src/hook/*"],
+      "@type/*": ["../../type/*"]
+    }
+  },
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

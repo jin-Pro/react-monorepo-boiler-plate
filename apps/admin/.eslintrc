@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "extends": ["@jinpro/eslint-config/react"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      },
+      "alias": {
+        "map": [
+          ["@page", "./src/page"],
+          ["@component", "./src/component"],
+          ["@hoc", "./src/hoc"],
+          ["@hook", "./src/hook"],
+          ["@type", "../../type"]
+        ],
+        "extensions": [".ts", ".tsx"]
+      }
+    }
+  }
+}

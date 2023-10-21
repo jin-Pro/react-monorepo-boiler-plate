@@ -1,0 +1,43 @@
+{
+  "name": "jinpro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "web": "pnpm --filter @jinpro/web",
+    "admin": "pnpm --filter @jinpro/admin",
+    "repository": "pnpm --filter @jinpro/repository",
+    "prettier": "pnpm -r prettier",
+    "type": "pnpm -r type",
+    "lint": "pnpm -r lint",
+    "prepare": "husky install"
+  },
+  "author": "jinPro",
+  "license": "ISC",
+  "engines": {
+    "node": "18",
+    "npm": "npm install 대신 pnpm i를 사용해주세요.",
+    "yarn": "yarn 대신 pnpm i를 사용해주세요."
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.0.0",
+    "@tanstack/react-query-devtools": "^5.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@types/node": "^20.8.7",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
+    "husky": "^8.0.3",
+    "pnpm": "^8.9.2",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "vite": "^4.5.0"
+  }
+}
