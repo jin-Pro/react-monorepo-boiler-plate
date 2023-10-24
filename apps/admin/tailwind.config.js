@@ -1,6 +1,5 @@
-import config from '@jinpro/tailwind-config';
-
+/* eslint-disable global-require */
 export default {
-  ...config,
   content: ['./src/**/*.tsx'],
+  presets: [require('@jinpro/tailwind-config')],
 };
